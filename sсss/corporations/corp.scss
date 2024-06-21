@@ -1,0 +1,44 @@
+@import '../base/vars.scss';
+@import '../base/mixins-extends.scss';
+.corporations {
+    width: 1440px;
+    height: 140px;
+    background-color: $white;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    @extend %flex-c-c;
+    @media (max-width: 769px){
+        width: 768px;
+        height: 155px;
+    }
+    @media (max-width: 376px){
+        width: 375px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.corporation-list {
+    width: 1111px;
+    height: 35px;
+    @extend %flex-sb-c;
+    @media (max-width: 769px){
+        width: 712px;
+        height: 35px;
+    }
+    @media (max-width: 376px){
+        width: 151px;
+        height: 420px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+.section-divider{
+    border: 1px solid $accent-color;
+    width: 771px;
+    height: 1px;
+    @media (max-width: 376px){
+        width: 375px
+    }
+}

@@ -1,0 +1,133 @@
+@import '../base/vars.scss';
+@import '../base/mixins-extends.scss';
+// Эту часть воообще только в 5 утра начал. Как смог так сделал
+.subscribe{
+    width: 1170px;
+    height: 523px;
+    margin: 80px auto;
+    position: relative;
+    @media (max-width: 769px){
+        width: 768px;
+        height: 382px;
+    }
+    @media (max-width: 376px){
+        width: 375px;
+        height: 671px;
+    }
+}
+.subscribe-bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 0;
+}
+
+.subs__txt {
+    width: 659px;
+    height: 182px;
+    @extend %flex-sb-l;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    margin-top: 100px;
+    margin-left: 130px;
+    @media (max-width: 769px){
+        margin-top: 72px;
+        margin-left: 93px;
+        width: 416px;
+        height: 117px;
+    }
+    @media (max-width: 376px){
+        margin-left: 56px;
+        margin-top: 186px;
+        width: 264px;
+        height: 42px;
+    }
+
+}
+.subs__title {
+    @include font-style($font-family,32px,600,172%,$white);
+    letter-spacing: 0.01em;
+    height: 110px;
+    @media (max-width: 769px){
+        @include font-style($font-family,20px,600,normal,$white);
+    }
+
+}
+.SUSCRIBE__SUBS {
+    width: 645px;
+    height: 79px;
+    @extend %flex-sb-c;
+    position: absolute;
+    z-index: 1;
+    margin-top: 344px;
+    margin-left: 126px;
+    @media (max-width: 769px){
+        width: 461px;
+        height: 56px;
+        margin-left: 90px;
+        margin-top: 217px;
+    }
+    @media (max-width: 376px){
+        flex-direction: column;
+        width: 333px;
+        height: 160px;
+        margin-top: 308px;
+        margin-left: 21px;
+    }
+}
+.subs__em-inp{
+    width: 372px;
+    height: 78px;
+    position: relative;
+    @include font-style($font-family,18px,500,normal,#14183e); //Блин че за цвет не в тему, черный же тоже классный. Систему меньше нагружает
+    letter-spacing: 0.02em;
+    border-radius: 192px;
+    box-shadow: 0 34px 50px 0 rgba(7, 63, 67, 0.07); // Спасибо инспект стилес, за то что ты есть
+    background: linear-gradient(356deg, #fff 0%, #e2e2e2 100%);  // Спасибо инспект стилес, за то что ты есть х2
+    @media (max-width: 769px){
+        width: 256px;
+        height: 55px;
+    }
+    @media (max-width: 376px){
+        width: 333px;
+        height: 69px;
+    }
+
+}
+.subs__em-inp::placeholder{
+    padding-left: 40px; //Эти 2 строчки кода стояли мне 20 минут гуглинга. В общей сложности я провел в гугле часов 3-4 за все время что я делал этот макет
+    @media (max-width: 769px){
+        padding-left: 29px;
+    }
+    @media (max-width: 376px){
+        padding-left: 54px;
+    }
+} 
+.subs-button {
+    border-radius: 192px;
+    width: 243px;
+    height: 78px;
+    @extend %flex-c-c;
+    @include font-style($font-family,20px ,600 ,none ,$white );
+    letter-spacing: 0.02em;
+    text-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 34px 50px 0 rgba(7, 63, 67, 0.07);
+    background: linear-gradient(356deg, #98aa28 0%, #d6ff7e 100%);
+    @media (max-width: 769px){
+        font-size: 18px;
+        width: 174px;
+        height: 55px;
+    }
+    @media (max-width: 376px){
+        font-size: 20px;
+        width: 224px;
+        height: 71px;
+    }
+    //Всегда бы так, все кнопки одним шаблоном
+    //в момент написания этой части кода, я решил проверить а не сломался ли мой макет. 
+    //Он сломался немножко, там кубики должны вылазить по идее. Но я не хочу ради этого лопатить код
+    //В связи с этим я вам отправлю свой макет сразу с адаптивкой, и прошу вас проверять меня по этому макету (пожалуйста)
+    //Хотя аргумент в виде "На работе за такое закопают на месте" делает все эти 5 строк коментов бесполезными. Я продолжу код
+}

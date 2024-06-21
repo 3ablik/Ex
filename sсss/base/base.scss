@@ -1,0 +1,44 @@
+@import './reset.scss';
+@import './vars.scss';
+@import './mixins-extends.scss';
+@import '../header/header.scss';
+@import '../corporations/corp.scss';
+@import '../advantages/advantages.scss';
+@import '../get-started/get-started.scss';
+@import '../help-u/help-u.scss';
+@import '../articles/article.scss';
+@import '../subcribe/subscribe.scss';
+@import '../footer/footer.scss';
+
+.none{
+    @media (max-width: 769px){
+        display: none;
+    }
+}
+.md-none{
+    display: none;
+    @media (max-width: 769px){
+        display: block;
+        @media (max-width: 376px){
+            display: none;
+        }
+    }
+}
+.sm-none{
+    display: none;
+    @media (max-width: 376px){
+        display: block;
+    }
+}
+.divider-none{
+    display: none;
+    @media (max-width: 769px){
+        display: flex;
+    }
+}
+.ds_md-none{
+    display: block;
+    @media (max-width: 376px){
+        display: none;
+    }
+}

@@ -1,0 +1,59 @@
+@import './vars.scss';
+@mixin font-style($ff, $fs, $fw, $ln, $c){
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $ln;
+    color: $c;
+}
+%accent-btn{
+    border-radius: 192px;
+    width: 243px;
+    height: 78px;
+    @extend %flex-c-c;
+    @include font-style($font-family,20px ,600 ,none ,$white );
+    letter-spacing: 0.02em;
+    text-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 34px 50px 0 rgba(7, 63, 67, 0.07);
+    background: linear-gradient(356deg, #98aa28 0%, #d6ff7e 100%);
+    @media (max-width: 769px){
+        font-size: 18px;
+        width: 224px;
+        height: 71px;
+    }
+    @media (max-width: 376px){
+        font-size: 20px;
+        width: 224px;
+        height: 71px;
+    }
+}
+%free-trail-btn{
+    border: 1px solid rgba(237, 255, 129, 0.4);
+    border-radius: 116px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 18px 35px;
+    @include font-style($font-family,16px ,500 ,none ,$white);
+    @media (max-width: 769px){
+        padding: 19px 38px;
+        font-size: 15px;
+    }
+    @media (max-width: 376px){
+        padding: 10px 27px;
+        font-size: 12px;
+    }
+}
+%flex-sb-c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-c-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-sb-l{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

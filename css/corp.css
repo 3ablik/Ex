@@ -1,0 +1,66 @@
+@import url(" https://fonts.cdnfonts.com/css/rubik ");
+@import url(" https://fonts.cdnfonts.com/css/rubik ");
+.corporation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corporations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.corporations {
+  width: 1440px;
+  height: 140px;
+  background-color: #fff;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 769px) {
+  .corporations {
+    width: 768px;
+    height: 155px;
+  }
+}
+@media (max-width: 376px) {
+  .corporations {
+    width: 375px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.corporation-list {
+  width: 1111px;
+  height: 35px;
+}
+@media (max-width: 769px) {
+  .corporation-list {
+    width: 712px;
+    height: 35px;
+  }
+}
+@media (max-width: 376px) {
+  .corporation-list {
+    width: 151px;
+    height: 420px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.section-divider {
+  border: 1px solid #A3B938;
+  width: 771px;
+  height: 1px;
+}
+@media (max-width: 376px) {
+  .section-divider {
+    width: 375px;
+  }
+}/*# sourceMappingURL=corp.css.map */

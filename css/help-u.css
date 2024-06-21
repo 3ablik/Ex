@@ -1,0 +1,210 @@
+@import url(" https://fonts.cdnfonts.com/css/rubik ");
+@import url(" https://fonts.cdnfonts.com/css/rubik ");
+.help-u__variant__topic-titles, .help-u__variant__circles, .help-u__variant-group, .help-u__txt-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.variant__topic-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-u {
+  width: 1440px;
+  height: 664px;
+  background: #f6fbf9;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (max-width: 769px) {
+  .help-u {
+    width: 768px;
+    height: 800px;
+  }
+}
+@media (max-width: 376px) {
+  .help-u {
+    width: 375px;
+  }
+}
+
+.help-u__txt-group {
+  width: 479px;
+  height: 121px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+@media (max-width: 769px) {
+  .help-u__txt-group {
+    width: 256px;
+    height: 195px;
+  }
+}
+
+.help-u__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 155%;
+  color: #253D32;
+  text-align: center;
+}
+@media (max-width: 769px) {
+  .help-u__title {
+    width: 256px;
+    height: 217px;
+  }
+}
+
+.help-u__desc {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  color: #78847D;
+}
+@media (max-width: 769px) {
+  .help-u__desc {
+    width: 228px;
+    text-align: center;
+  }
+}
+
+.help-u__variant-group {
+  width: 1138px;
+  height: 205px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+@media (max-width: 769px) {
+  .help-u__variant-group {
+    width: 237px;
+    overflow-x: scroll;
+    height: 280px;
+  }
+}
+@media (max-width: 376px) {
+  .help-u__variant-group {
+    width: 301px;
+  }
+}
+
+.help-u__variant__circles {
+  width: 971px;
+  height: 100px;
+  margin-top: 50px;
+}
+@media (max-width: 769px) {
+  .help-u__variant__circles {
+    margin-left: 925px;
+    width: 940px;
+  }
+}
+
+.variant__topic-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #a2bdaa;
+  background-color: #fff;
+  box-shadow: 0 20px 30px 0 rgba(118, 153, 115, 0.05);
+  position: relative;
+  animation-name: topic-circle_reverse;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.variant__topic-circle:hover {
+  animation-fill-mode: forwards;
+  animation-name: topic-circle;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+.variant__choisen {
+  opacity: 0;
+  position: absolute;
+  animation-name: crystal-fade-out;
+  animation-duration: 1s;
+}
+
+.variant__choisen:hover {
+  animation-fill-mode: forwards;
+  animation-name: crystal-fade-in;
+}
+
+.help-u__variant__topic-titles {
+  width: 1138px;
+  height: 80px;
+  margin: 25px auto;
+}
+@media (max-width: 376px) {
+  .help-u__variant__topic-titles {
+    margin-left: 35px;
+  }
+}
+
+.variant__topic-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 182%;
+  color: #78847D;
+  text-align: center;
+  width: 237px;
+}
+
+.help-u__see-more {
+  margin-top: 60px;
+}
+
+@keyframes topic-circle {
+  from {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a2bdaa;
+    margin-left: 0;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin-left: -10px;
+  }
+}
+@keyframes topic-circle_reverse {
+  from {
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin-left: -10px;
+  }
+  to {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a2bdaa;
+    margin-left: 0;
+  }
+}
+@keyframes crystal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes crystal-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=help-u.css.map */

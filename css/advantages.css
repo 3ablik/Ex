@@ -1,0 +1,221 @@
+@import url(" https://fonts.cdnfonts.com/css/rubik ");
+@import url(" https://fonts.cdnfonts.com/css/rubik ");
+.see-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantages {
+  width: 1170px;
+  height: 567px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+}
+@media (max-width: 769px) {
+  .advantages {
+    width: 773px;
+    height: 1634px;
+    flex-direction: column;
+    margin: 67px auto;
+  }
+}
+@media (max-width: 376px) {
+  .advantages {
+    width: 375px;
+    height: 1836px;
+    flex-direction: column;
+    margin: 128px auto;
+  }
+}
+
+.advantages__txt-group {
+  width: 488px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media (max-width: 769px) {
+  .advantages__txt-group {
+    width: 351px;
+    height: 368px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 376px) {
+  .advantages__txt-group {
+    width: 289px;
+    height: 378px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.advantages__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 155%;
+  color: #253D32;
+  letter-spacing: 0.02em;
+  height: 130px;
+}
+@media (max-width: 769px) {
+  .advantages__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 217%;
+    color: #253D32;
+    width: 347px;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .advantages__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 260%;
+    color: #253D32;
+    width: 289px;
+  }
+}
+
+.advantages__desc {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 182%;
+  color: #78847D;
+  width: 424px;
+  height: 160px;
+  margin-top: -10px;
+}
+@media (max-width: 769px) {
+  .advantages__desc {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 250%;
+    color: #78847D;
+    text-align: center;
+    width: 351px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 376px) {
+  .advantages__desc {
+    width: 289px;
+  }
+}
+
+.see-more {
+  width: 150px;
+  height: 28px;
+}
+
+.advantages-group {
+  display: grid;
+  grid-template-rows: reapeat(2, 239px);
+  grid-template-columns: 228px 254px;
+  gap: 80px;
+}
+@media (max-width: 769px) {
+  .advantages-group {
+    width: 228px;
+    height: 1134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 376px) {
+  .advantages-group {
+    width: 230px;
+    height: 1034px;
+  }
+}
+
+.advantage-block {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+@media (max-width: 769px) {
+  .advantage-block {
+    align-items: center;
+  }
+}
+@media (max-width: 376px) {
+  .advantage-block {
+    align-items: baseline;
+  }
+}
+
+.advantage-block__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: none;
+  color: #253D32;
+  margin-top: 40px;
+}
+@media (max-width: 769px) {
+  .advantage-block__title {
+    text-align: center;
+    width: 221px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .advantage-block__title {
+    width: 203px;
+    text-align: left;
+  }
+}
+
+.advantage-block__desc {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 178%;
+  color: #78847D;
+  margin-top: 25px;
+}
+@media (max-width: 769px) {
+  .advantage-block__desc {
+    text-align: center;
+    width: 228px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .advantage-block__desc {
+    text-align: left;
+  }
+}
+
+.advantage-block__further {
+  padding-left: 10px;
+}
+.advantage-block__further .advantage-block__title {
+  width: 254px;
+}
+@media (max-width: 769px) {
+  .advantage-block__further {
+    padding-left: 0;
+  }
+}
+@media (max-width: 376px) {
+  .advantage-block__further {
+    width: 220px;
+  }
+}/*# sourceMappingURL=advantages.css.map */

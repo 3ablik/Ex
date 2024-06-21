@@ -1,0 +1,167 @@
+@import '../base/vars.scss';
+@import '../base/mixins-extends.scss';
+.help-u {
+    width: 1440px;
+    height: 664px;
+    background: #f6fbf9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    @media (max-width: 769px){
+        width: 768px;
+        height: 800px;
+    }
+    @media (max-width: 376px){
+        width: 375px;
+    }
+}
+.help-u__txt-group {
+    width: 479px;
+    height: 121px;
+    @extend %flex-sb-c;
+    flex-direction: column;
+    margin-top: 100px;
+    @media (max-width: 769px){
+        width: 256px;
+        height: 195px;
+    }
+}
+.help-u__title {
+    @include font-style($font-family, 42px, 700, 155%, $title-color);
+    text-align: center;
+    @media (max-width: 769px){
+        width: 256px;
+        height: 217px;
+    }
+}
+.help-u__desc {
+    @include font-style($font-family, 22px, 400, normal, $main-color);
+    @media (max-width: 769px){
+        width: 228px;
+        text-align: center;
+    }
+}
+.help-u__variant-group {
+    width: 1138px;
+    height: 205px;
+    @extend %flex-sb-c;
+    flex-direction: column;
+    margin-top: 50px;
+    @media (max-width: 769px){
+        width: 237px;
+        overflow-x: scroll;
+        height: 280px;
+    }
+    @media (max-width: 376px){
+        width: 301px;
+    }
+}
+.help-u__variant__circles {
+    width: 971px;
+    height: 100px;
+    @extend %flex-sb-c;
+    margin-top: 50px;
+    @media (max-width: 769px){
+        margin-left: 925px;
+        width: 940px;
+    }
+}
+.variant__topic-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #a2bdaa;
+    background-color: #fff;
+    box-shadow: 0 20px 30px 0 rgba(118, 153, 115, 0.05);
+    @extend %flex-c-c;
+    position: relative;
+    
+    animation-name: topic-circle_reverse;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
+}
+.variant__topic-circle:hover{
+    animation-fill-mode: forwards;
+    animation-name: topic-circle;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    
+}
+.variant__choisen{
+    opacity: 0;
+    position: absolute;
+    animation-name: crystal-fade-out;
+
+    animation-duration: 1s;
+}
+.variant__choisen:hover{
+    animation-fill-mode: forwards;
+    animation-name: crystal-fade-in;
+}
+.help-u__variant__topic-titles {
+    width: 1138px;
+    height: 80px;
+    margin: 25px auto;
+    @extend %flex-sb-c;
+    @media (max-width: 376px){
+        margin-left: 35px;
+    }
+}
+.variant__topic-title {
+    @include font-style($font-family, 22px, 400, 182%, $main-color);
+    text-align: center;
+    width: 237px;
+}
+.help-u__see-more {
+    margin-top: 60px;
+}
+
+@keyframes topic-circle{
+    from{
+        width: 50px;
+        height: 50px;
+        border: 1px solid #a2bdaa;
+        margin-left: 0;
+    }
+    to{
+        width: 100px;
+        height: 100px;
+        border: none;
+        margin-left: -10px;
+    }
+}
+@keyframes topic-circle_reverse{
+    from{
+        width: 100px;
+        height: 100px;
+        border: none;
+        margin-left: -10px;
+    }
+    to{
+        width: 50px;
+        height: 50px;
+        border: 1px solid #a2bdaa;
+        margin-left: 0;
+    }
+}
+@keyframes crystal-fade-in{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+@keyframes crystal-fade-out{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
